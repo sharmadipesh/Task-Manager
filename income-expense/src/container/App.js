@@ -11,6 +11,7 @@ import Signup from 'views/authentication/Signup'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import {Routes} from 'config/Routes';
 import MainLayout from 'container/MainLayout';
+import PrivateRoute from 'views/components/PrivateRoute';
 
 const createStoreWithMiddleware = applyMiddleware(
   axiosAuthMiddleware,
@@ -68,8 +69,8 @@ class App extends Component {
           <Router>
               <Route exact component={Login} path={Routes.Landingpage}/>
               <Route exact component={Login} path={Routes.Login}/>
-              <Route  component={Signup} path={Routes.Signup}/>
-              <Route  component={MainLayout} path={Routes.Dashboard}/>
+              <Route exact component={Signup} path={Routes.Signup}/>
+              <PrivateRoute component={MainLayout} path={Routes.Dashboard}/>
           </Router>
         </Provider>
       </div>

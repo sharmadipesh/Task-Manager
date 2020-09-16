@@ -7,6 +7,7 @@ import Dashboard from 'views/dashboard/dash';
 import Header from 'views/components/Header';
 import Sidebar from 'views/components/Sidebar';
 import ComingSoon from 'views/coming-soon/Coming-soon';
+import PrivateRoute from 'views/components/PrivateRoute';
 
 class MainLayout extends Component {
     render() {
@@ -16,9 +17,9 @@ class MainLayout extends Component {
                 <div className="main-content-container">
                     <Header {...this.props}/>
                     <Switch>
-                        <Route exact component={()=><Dashboard {...this.props}/>} path={Routes.Dashboard}/>
-                        <Route exact component={()=><ComingSoon {...this.props}/>} path={Routes.Income}/>
-                        <Route exact component={()=><ComingSoon {...this.props}/>} path={Routes.Setting}/>
+                        <PrivateRoute exact component={()=><Dashboard {...this.props}/>} path={Routes.Dashboard}/>
+                        <PrivateRoute exact component={()=><ComingSoon {...this.props}/>} path={Routes.Income}/>
+                        <PrivateRoute exact component={()=><ComingSoon {...this.props}/>} path={Routes.Setting}/>
                     </Switch>
                 </div> 
             </div>

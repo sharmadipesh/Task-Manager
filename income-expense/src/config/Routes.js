@@ -2,7 +2,7 @@ const Routes = {
     Signup:'/signup',
     Login:'/Login',
     Landingpage:'/',
-    Dashboard:'/dashboard/',
+    Dashboard:'/dashboard',
     Income:"/dashboard/income",
     Setting:"/dashboard/setting"
 }
