@@ -1,0 +1,63 @@
+@each $size
+	in (5,10, 15, 20, 25, 30, 35, 40, 45, 50)
+{
+	.m-#{$size} {
+		margin: #{$size}px;
+	}
+	.mt-#{$size} {
+		margin-top: #{$size}px;
+	}
+	.mb-#{$size} {
+		margin-bottom: #{$size}px;
+	}
+	.ml-#{$size} {
+		margin-left: #{$size}px;
+	}
+	.mr-#{$size} {
+		margin-right: #{$size}px;
+	}
+	.mlr-#{$size} {
+		margin-left: #{$size}px;
+		margin-right: #{$size}px;
+	}
+	.mtb-#{$size} {
+		margin-top: #{$size}px;
+		margin-bottom: #{$size}px;
+	}
+	.p-#{$size} {
+		padding: #{$size}px;
+	}
+	.pt-#{$size} {
+		padding-top: #{$size}px;
+	}
+	.pb-#{$size} {
+		padding-bottom: #{$size}px;
+	}
+	.pl-#{$size} {
+		padding-left: #{$size}px;
+	}
+	.pr-#{$size} {
+		padding-right: #{$size}px;
+	}
+	.plr-#{$size} {
+		padding-left: #{$size}px;
+		padding-right: #{$size}px;
+	}
+	.ptb-#{$size} {
+		padding-top: #{$size}px;
+		padding-bottom: #{$size}px;
+	}
+}
+
+.clickable{
+	cursor: pointer;
+}
+
+
+
+.coming-soon{
+	display: flex;
+	flex-direction: column;
+	justify-content:center ;
+	align-items: center;
+}

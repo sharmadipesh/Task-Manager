@@ -1,0 +1,83 @@
+.auth-layout-container{
+    overflow: hidden;
+    display: flex;
+    // height: 100vh;
+
+    .text-information{
+        font-family: $lato-semibold;
+        font-size: 20px;
+        // margin: 0 0 20px;
+    }
+    .text-small{
+        font-size: 16px;
+        font-family: $lato-light;
+    }
+
+    .part-one{
+        width: 50%;
+        background-color: #f4f5f7;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .part-two{
+        width: 50%;
+        padding: 0px 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .login-header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .register-now-text{
+        font-family:$lato-semibold ;
+        text-align: center;
+        span{
+            color: #665DF5;
+            font-size: 18px;
+            margin-left: 10px;
+        }
+    }
+}
+.auth-img{
+    height: 50vh;
+}
+
+.company-name{
+    color: #665DF5;
+    // font-family:$lato-semibold ;
+    font-family: $satisfy-regular;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.signup-form-container{
+    background-color: #f4f5f7;
+    padding-top: 75px;
+    .ant-card {
+        border-radius: 3px;
+        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.1);
+        .ant-card-body{
+            padding-top: 30px;
+        }   
+    }
+    .signup-form{
+        .part-one{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .part-two{
+            width: 50%;
+        }
+    }
+}

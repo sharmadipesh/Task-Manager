@@ -1,0 +1,36 @@
+.sidebar-style-container{
+    position: fixed;
+    width: 140px;
+    background-color: #2a3d66;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    .company-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        div{
+            color: #665df5;
+            font-size: 18px;
+            font-family: $satisfy-regular;
+            font-weight: 600;
+        }
+    }
+    .link-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .active-link-st{
+            color: #665df5;
+            font-size: 14px;
+            font-family: $lato-semibold;
+        }
+        .de-active-link-st{
+            @extend  .active-link-st;
+            color: #fff;
+        }
+    }
+}

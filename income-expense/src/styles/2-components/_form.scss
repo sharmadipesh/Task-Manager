@@ -1,0 +1,15 @@
+.ant-btn-primary{
+    background-color: #665df5;
+    border-color: #665df5;
+    background: #665df5;
+    &:hover,&:focus{
+        background: #574ee1;
+        border-color: #574ee1;
+    }
+}
+
+.ant-input,.ant-input-number-input{
+    &:hover{
+        border-color:#574ee1;
+    }
+}

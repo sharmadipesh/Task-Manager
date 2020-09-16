@@ -1,0 +1,16 @@
+// antd design css
+@import '~antd/dist/antd.css';
+
+// main tools scss
+@import './1-tools/fonts';
+@import './1-tools/vars';
+@import './1-tools/app';
+
+// components
+@import './2-components/header';
+@import './2-components/sidebar';
+@import './2-components/form';
+
+// pages
+@import './3-pages/common';
+@import './3-pages/auth-style'
