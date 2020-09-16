@@ -23,11 +23,21 @@ class dash extends Component {
                 title: 'Category',
                 dataIndex: 'category',
                 key: 'category',
+                sorter: {
+                    compare: (a, b) =>{
+                        if(a.category < b.category) { return -1; }
+                        if(a.category > b.category) { return 1; }
+                        return 0;
+                    },
+                }
             },
             {
                 title:'Amount',
                 dataIndex:'amount',
-                key:'amount'
+                key:'amount',
+                sorter: {
+                    compare: (a, b) => a.amount - b.amount,     
+                }
             },
             {
                 title:'Description',
