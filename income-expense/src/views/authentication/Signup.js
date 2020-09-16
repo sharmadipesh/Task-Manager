@@ -101,6 +101,11 @@ class Signup extends Component {
                                 Sign Up
                             </Button>
                         </Form.Item>
+                        <div className="register-now-text">
+                            Already have an account? <span className="clickable" 
+                            onClick={()=>this.props.history.push(Routes.Login)}
+                            >Sign In</span>
+                        </div>
                     </Form>
                 </div>
             </div>

@@ -35,16 +35,6 @@
             justify-content: center;
         }
     }
-
-    .register-now-text{
-        font-family:$lato-semibold ;
-        text-align: center;
-        span{
-            color: #665DF5;
-            font-size: 18px;
-            margin-left: 10px;
-        }
-    }
 }
 .auth-img{
     height: 50vh;
@@ -79,5 +69,15 @@
         .part-two{
             width: 50%;
         }
+    }
+}
+
+.register-now-text{
+    font-family:$lato-semibold ;
+    text-align: center;
+    span{
+        color: #665DF5;
+        font-size: 18px;
+        margin-left: 10px;
     }
 }

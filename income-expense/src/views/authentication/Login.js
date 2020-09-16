@@ -45,7 +45,7 @@ class Login extends Component {
                 </div>
                 <div className="part-two">  
                     <div className="login-header mb-30">
-                        <img alt="login" src="img/expenses.svg" height="60px"/>
+                        <img alt="login" src="img/expenses.svg" height="55px"/>
                         <div className="company-name">Expense Manager</div>
                     </div>
                     <div className="text-information ">
