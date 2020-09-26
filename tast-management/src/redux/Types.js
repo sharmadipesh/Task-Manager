@@ -1,0 +1,5 @@
+export const LOGIN_STATUS='LOGIN_STATUS';
+export const REDUX_SETUP='REDUX_SETUP';
+export const TASK_ADDED='TASK_ADDED';
+export const TASK_DELETE='TASK_DELETE';
+export const TASK_UPDATED='TASK_UPDATED';

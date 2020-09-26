@@ -1,0 +1,105 @@
+// authentication
+.authentication-container{
+    overflow: hidden;
+    display: flex;
+
+    .part-one{
+        width: 50%;
+        background-color:#f4f4f4;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 50vh;
+            width: auto;
+        }
+    }
+
+    .part-two{
+        width: 50%;
+        padding: 0 150px;
+        display: flex;
+        // align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        .logo-container{
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #665df5;
+            font-family:$satisfy-regular;
+            font-size: 25px;
+            div{
+                margin-left: 15px;
+                padding-top: 5px;
+            }
+        }
+        .sub-text{
+            font-family: $lato-semibold;
+            // margin-bottom: 2px;
+        }
+        .sub-text-light{
+            font-family: $lato-light;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+// Header container
+.Header-style-container{
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    .logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo-text{
+            color: #665df5;
+            font-family:$satisfy-regular;
+            font-size: 25px;
+            margin-left: 10px;
+        }
+    }
+    .logout-btn{
+        cursor: pointer;
+        transition: 0.3s;
+        padding: 10px;
+        border-radius: 30px;
+        &:hover{
+            transition: 0.3s;
+            background-color: rgba(0,0,0,0.1);
+        }
+    }
+}
+
+// form
+.ant-btn-primary{
+    background-color: #665df5;
+    border-color: #665df5;
+    background: #665df5;
+    &:hover,&:focus{
+        background: #574ee1;
+        border-color: #574ee1;
+    }
+}
+
+.ant-input,.ant-input-number-input,.ant-picker-focused{
+    &:hover{
+        border-color:#574ee1;
+    }
+}
